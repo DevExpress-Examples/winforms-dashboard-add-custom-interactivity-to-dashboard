@@ -54,10 +54,6 @@
             this.dashboardViewer1.Name = "dashboardViewer1";
             this.dashboardViewer1.Size = new System.Drawing.Size(376, 502);
             this.dashboardViewer1.TabIndex = 0;
-            this.dashboardViewer1.DataLoading += new DevExpress.DashboardCommon.DataLoadingEventHandler(this.dashboardViewer1_DataLoading);
-            this.dashboardViewer1.DashboardItemClick += new DevExpress.DashboardWin.DashboardItemMouseActionEventHandler(this.dashboardViewer1_DashboardItemClick);
-            this.dashboardViewer1.DashboardItemVisualInteractivity += new DevExpress.DashboardWin.DashboardItemVisualInteractivityEventHandler(this.dashboardViewer1_DashboardItemVisualInteractivity);
-            this.dashboardViewer1.DashboardItemSelectionChanged += new DevExpress.DashboardWin.DashboardItemSelectionChangedEventHandler(this.dashboardViewer1_DashboardItemSelectionChanged);
             // 
             // splitContainerControl1
             // 
