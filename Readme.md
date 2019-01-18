@@ -18,4 +18,4 @@ To accomplish this, handle the following events:
 
 > This example operates with the [MultiDimensionalData](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.ViewerData.MultiDimensionalData) API. For more information on the **MultiDimensionalData** concept refer to the [Obtaining Underlying and Displayed Data](https://docs.devexpress.com/Dashboard/17269) document.
 
-![screenshot](images\screenshot.png)
+![screenshot](https://github.com/DevExpress-Examples/how-to-add-custom-interactivity-to-a-dashboard-displayed-in-the-winforms-viewer-t189795/blob/18.2.4%2B/images/screenshot.png)
