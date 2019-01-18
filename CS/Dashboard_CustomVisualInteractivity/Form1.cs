@@ -1,17 +1,23 @@
-﻿using DevExpress.DashboardWin;
+﻿using DevExpress.DashboardCommon;
+using DevExpress.DashboardCommon.ViewerData;
+using DevExpress.DashboardWin;
 using DevExpress.XtraEditors;
 using DevExpress.XtraPivotGrid;
-using DevExpress.DashboardCommon;
 using System.Windows.Forms;
-using DevExpress.DashboardCommon.ViewerData;
-using DevExpress.DataAccess;
-namespace Dashboard_CustomVisualInteractivity {
+
+namespace Dashboard_CustomVisualInteractivity
+{
     public partial class Form1 : XtraForm {
         public Form1() {
             InitializeComponent();
-            this.salesPersonTableAdapter.Fill(this.nwindDataSet.SalesPerson);
+            dashboardViewer1.DataLoading += dashboardViewer1_DataLoading;
+            dashboardViewer1.DashboardItemClick += dashboardViewer1_DashboardItemClick;
+            dashboardViewer1.DashboardItemVisualInteractivity += dashboardViewer1_DashboardItemVisualInteractivity;
+            dashboardViewer1.DashboardItemSelectionChanged += dashboardViewer1_DashboardItemSelectionChanged;
+
+            salesPersonTableAdapter.Fill(nwindDataSet.SalesPerson);
             
-            dashboardViewer1.LoadDashboard(@"..\..\Data\Dashboard.xml");
+            dashboardViewer1.LoadDashboard("Data\\Dashboard.xml");
         }
 
         private void dashboardViewer1_DashboardItemVisualInteractivity(object sender, 
@@ -57,7 +63,7 @@ namespace Dashboard_CustomVisualInteractivity {
 
         private void dashboardViewer1_DataLoading(object sender, DataLoadingEventArgs e) {
             if (e.DataSourceComponentName == "dataSource1") {
-                e.Data = this.nwindDataSet.SalesPerson;
+                e.Data = nwindDataSet.SalesPerson;
             }
         }
     }

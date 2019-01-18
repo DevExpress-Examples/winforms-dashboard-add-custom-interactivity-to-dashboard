@@ -52,12 +52,9 @@
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardViewer1.Location = new System.Drawing.Point(0, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";
-            this.dashboardViewer1.PrintingOptions.DocumentContentOptions.FilterState = DevExpress.DashboardWin.DashboardPrintingFilterState.None;
-            this.dashboardViewer1.PrintingOptions.FontInfo.GdiCharSet = ((byte)(0));
-            this.dashboardViewer1.PrintingOptions.FontInfo.Name = null;
-            this.dashboardViewer1.Size = new System.Drawing.Size(546, 462);
+            this.dashboardViewer1.Size = new System.Drawing.Size(376, 502);
             this.dashboardViewer1.TabIndex = 0;
-            this.dashboardViewer1.DataLoading +=new DevExpress.DashboardCommon.DataLoadingEventHandler(dashboardViewer1_DataLoading);
+            this.dashboardViewer1.DataLoading += new DevExpress.DashboardCommon.DataLoadingEventHandler(this.dashboardViewer1_DataLoading);
             this.dashboardViewer1.DashboardItemClick += new DevExpress.DashboardWin.DashboardItemMouseActionEventHandler(this.dashboardViewer1_DashboardItemClick);
             this.dashboardViewer1.DashboardItemVisualInteractivity += new DevExpress.DashboardWin.DashboardItemVisualInteractivityEventHandler(this.dashboardViewer1_DashboardItemVisualInteractivity);
             this.dashboardViewer1.DashboardItemSelectionChanged += new DevExpress.DashboardWin.DashboardItemSelectionChangedEventHandler(this.dashboardViewer1_DashboardItemSelectionChanged);
@@ -71,8 +68,8 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.pivotGridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1110, 462);
-            this.splitContainerControl1.SplitterPosition = 546;
+            this.splitContainerControl1.Size = new System.Drawing.Size(798, 502);
+            this.splitContainerControl1.SplitterPosition = 376;
             this.splitContainerControl1.TabIndex = 1;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -92,7 +89,7 @@
             this.fieldSalesPerson1});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
-            this.pivotGridControl1.Size = new System.Drawing.Size(559, 462);
+            this.pivotGridControl1.Size = new System.Drawing.Size(412, 502);
             this.pivotGridControl1.TabIndex = 0;
             // 
             // salesPersonBindingSource
@@ -183,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 462);
+            this.ClientSize = new System.Drawing.Size(798, 502);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "Form1";
             this.Text = "Dashboard Viewer";
