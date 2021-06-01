@@ -7,8 +7,8 @@
 
 
 This example shows how to add a custom interactivity to a dashboard loaded in the [WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122/winforms-dashboard/winforms-viewer):
-- A user can filter data in the external [PivotGridControl](https://docs.devexpress.com/WindowsForms/3409) with the records selected in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item. 
-- When a user clicks the chart series, the Grid control displays the corresponding underlying data.
+- A user can select records in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item to filter data in the external [Pivot Grid](https://docs.devexpress.com/WindowsForms/3409) control. 
+- When a user clicks the chart series, the [Data Grid](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) control displays the corresponding underlying data.
 
 To accomplish this, handle the following events:
 
