@@ -10,6 +10,8 @@ This example shows how to add a custom interactivity to a dashboard loaded in th
 - A user can select records in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item to filter data in the external [Pivot Grid](https://docs.devexpress.com/WindowsForms/3409) control. 
 - When a user clicks the chart series, the [Data Grid](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) control displays the corresponding underlying data.
 
+![screenshot](https://github.com/DevExpress-Examples/how-to-add-custom-interactivity-to-a-dashboard-displayed-in-the-winforms-viewer-t189795/blob/18.2.4%2B/images/screenshot.png)
+
 To accomplish this, handle the following events:
 
 * [DashboardViewer.DashboardItemVisualInteractivity](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event allows you to implement a custom [Master Filtering](https://docs.devexpress.com/Dashboard/116912).
@@ -18,7 +20,6 @@ To accomplish this, handle the following events:
 
 * [DashboardViewer.DashboardItemSelectionChanged](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemSelectionChanged) event allows you to obtain underlying data when the user clicks the chart series.
 
-![screenshot](https://github.com/DevExpress-Examples/how-to-add-custom-interactivity-to-a-dashboard-displayed-in-the-winforms-viewer-t189795/blob/18.2.4%2B/images/screenshot.png)
 
 This example operates with the [MultiDimensionalData](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.ViewerData.MultiDimensionalData) API. For more information on the **MultiDimensionalData** concept, refer to the following document: [Obtain Underlying and Displayed Data](https://docs.devexpress.com/Dashboard/17269/winforms-dashboard/winforms-viewer/obtaining-underlying-and-displayed-data).
 
