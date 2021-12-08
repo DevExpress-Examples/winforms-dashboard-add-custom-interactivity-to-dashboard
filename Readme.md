@@ -10,7 +10,7 @@ This example shows how to add a custom interactivity to a dashboard loaded in th
 - A user can select records in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item to filter data in the external [Pivot Grid](https://docs.devexpress.com/WindowsForms/3409) control. 
 - When a user clicks the chart series, the [Data Grid](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) control displays the corresponding underlying data.
 
-![screenshot](https://github.com/DevExpress-Examples/how-to-add-custom-interactivity-to-a-dashboard-displayed-in-the-winforms-viewer-t189795/blob/18.2.4%2B/images/screenshot.png)
+![screenshot](./images/screenshot.png)
 
 <!-- default file list -->
 ## Files to Look At
