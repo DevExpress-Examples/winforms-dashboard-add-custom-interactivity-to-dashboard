@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-## Dashboard for WinForms - How to Implement Custom Interactivity
+# Dashboard for WinForms - How to Implement Custom Interactivity
 
 This example shows how to add a custom interactivity to a dashboard loaded in the [WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122/winforms-dashboard/winforms-viewer):
 - A user can select records in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item to filter data in the external [Pivot Grid](https://docs.devexpress.com/WindowsForms/3409) control. 
@@ -12,22 +12,17 @@ This example shows how to add a custom interactivity to a dashboard loaded in th
 
 ![screenshot](./images/screenshot.png)
 
-<!-- default file list -->
-## Files to Look At
-
-* [Form1.cs](./CS/Dashboard_CustomVisualInteractivity/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_CustomVisualInteractivity/Form1.vb))
-<!-- default file list end -->
-
 To accomplish this, handle the following events:
 
 * [DashboardViewer.DashboardItemVisualInteractivity](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event allows you to implement a custom [Master Filtering](https://docs.devexpress.com/Dashboard/116912).
-
 * [DashboardViewer.DashboardItemSelectionChanged](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemSelectionChanged) event allows you to filter data in the external [PivotGridControl](https://docs.devexpress.com/WindowsForms/3409) with the records selected in the [Grid](https://docs.devexpress.com/Dashboard/15150) dashboard item.
-
 * [DashboardViewer.DashboardItemSelectionChanged](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemSelectionChanged) event allows you to obtain underlying data when the user clicks the chart series.
 
-
 This example operates with the [MultiDimensionalData](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.ViewerData.MultiDimensionalData) API. For more information on the **MultiDimensionalData** concept, refer to the following document: [Obtain Underlying and Displayed Data](https://docs.devexpress.com/Dashboard/17269/winforms-dashboard/winforms-viewer/obtaining-underlying-and-displayed-data).
+
+## Files to Look At
+
+* [Form1.cs](./CS/Dashboard_CustomVisualInteractivity/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_CustomVisualInteractivity/Form1.vb))
 
 ## Documentation
 
